@@ -22,9 +22,6 @@ class Employee(db.Model):
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
 
-    def some(self):
-        return self.employees[0]
-
 
 class EmployeeSchema(ma.Schema):
     class Meta:
